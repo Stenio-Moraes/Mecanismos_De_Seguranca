@@ -6,7 +6,7 @@ O site foi criado para complementar nossa apresentação e ajudar outras pessoas
 **Objetivo do site:** compartilhar informações sobre segurança digital, mostrar ameaças comuns da internet e apresentar dicas de como proteger nossos dados no dia a dia. 
 
 ## Integrantes
-- Stênio Moraes
+- Stênio Moraes ( @Stenio-Moraes )
 - Renan Silva
 - Levi Mano
 - Kauan Rodrigues
