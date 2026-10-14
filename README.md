@@ -7,14 +7,25 @@ O site foi criado para complementar nossa apresentação e ajudar outras pessoas
 
 ## Integrantes
 
-<a href="https://github.com/Stenio-Moraes" target="_blank">
-  Stênio Moraes (@Stenio-Moraes)
+Stênio Moraes <a href="https://github.com/Stenio-Moraes" target="_blank">
+(@Stenio-Moraes)
 </a>
-
-- Stênio Moraes ( @Stenio-Moraes )
-- Renan Silva
-- Levi Mano
-- Kauan Rodrigues
-- Pedro Soares
+<br>
+Renan Silva <a href="https://github.com/Stenio-Moraes" target="_blank">
+(@Stenio-Moraes)
+</a>
+<br>
+Levi Mano <a href="https://github.com/Stenio-Moraes" target="_blank">
+(@Stenio-Moraes)
+</a>
+<br>
+Kauan Rodrigues <a href="https://github.com/Stenio-Moraes" target="_blank">
+(@Stenio-Moraes)
+</a>
+<br>
+Pedro Soares <a href="https://github.com/Stenio-Moraes" target="_blank">
+(@Stenio-Moraes)
+</a>
+<br>
 
 Feito para a Semana da Tecnologia — 2026.
