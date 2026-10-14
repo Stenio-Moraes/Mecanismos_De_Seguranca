@@ -6,6 +6,11 @@ O site foi criado para complementar nossa apresentação e ajudar outras pessoas
 **Objetivo do site:** compartilhar informações sobre segurança digital, mostrar ameaças comuns da internet e apresentar dicas de como proteger nossos dados no dia a dia. 
 
 ## Integrantes
+
+<a href="https://github.com/Stenio-Moraes" target="_blank">
+  Stênio Moraes (@Stenio-Moraes)
+</a>
+
 - Stênio Moraes ( @Stenio-Moraes )
 - Renan Silva
 - Levi Mano
