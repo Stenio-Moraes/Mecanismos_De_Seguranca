@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mecanismos de Segurança</title>
+</head>
+<body>
+
+    <header>
+        <h1>Mecanismos de Segurança</h1>
+        <p>Aprenda a proteger seus dados no mundo digital.</p>
+
+        <nav>
+            <a href="#inicio">Início</a> |
+            <a href="#importancia">Importância</a> |
+            <a href="#ameacas">Ameaças</a> |
+            <a href="#protecao">Proteção</a> |
+            <a href="#sobre">Sobre o projeto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bem-vindo!</h2>
+            <p>
+                Este site foi desenvolvido para a Semana da Tecnologia de 2026,
+                com o objetivo de apresentar conceitos de segurança digital
+                e mostrar como proteger nossas informações na internet.
+            </p>
+        </section>
+
+        <section id="importancia">
+            <h2>O que é segurança digital?</h2>
+            <p>
+                Segurança digital é o conjunto de práticas e mecanismos
+                utilizados para proteger sistemas, dispositivos e informações
+                contra acessos não autorizados, ataques e perdas de dados.
+            </p>
+
+            <h3>Os três pilares da segurança</h3>
+            <ul>
+                <li><strong>Confidencialidade:</strong> somente pessoas autorizadas podem acessar as informações.</li>
+                <li><strong>Integridade:</strong> os dados devem permanecer corretos e sem alterações indevidas.</li>
+                <li><strong>Disponibilidade:</strong> as informações devem estar acessíveis quando necessário.</li>
+            </ul>
+        </section>
+
+        <section id="ameacas">
+            <h2>Principais ameaças digitais</h2>
+
+            <article>
+                <h3>Phishing</h3>
+                <p>Mensagens ou páginas falsas criadas para roubar informações pessoais.</p>
+            </article>
+
+            <article>
+                <h3>Malware</h3>
+                <p>Programas maliciosos que podem danificar dispositivos ou roubar dados.</p>
+            </article>
+
+            <article>
+                <h3>Senhas fracas</h3>
+                <p>Senhas fáceis de descobrir podem facilitar o acesso indevido às contas.</p>
+            </article>
+
+            <article>
+                <h3>Links suspeitos</h3>
+                <p>Links desconhecidos podem levar a golpes ou páginas perigosas.</p>
+            </article>
+        </section>
+
+        <section id="protecao">
+            <h2>Como se proteger?</h2>
+            <ul>
+                <li>Use senhas fortes e diferentes para cada conta.</li>
+                <li>Ative a autenticação em dois fatores.</li>
+                <li>Mantenha o sistema e os aplicativos atualizados.</li>
+                <li>Utilize antivírus e outras ferramentas de proteção.</li>
+                <li>Evite clicar em links suspeitos.</li>
+                <li>Não compartilhe senhas ou dados pessoais com desconhecidos.</li>
+                <li>Faça cópias de segurança dos arquivos importantes.</li>
+            </ul>
+        </section>
+
+        <section id="quiz">
+            <h2>Teste seus conhecimentos</h2>
+            <p>Qual destas atitudes ajuda a proteger uma conta?</p>
+
+            <form>
+                <input type="radio" name="resposta" id="opcao1">
+                <label for="opcao1">Usar a mesma senha em todos os sites.</label>
+                <br>
+
+                <input type="radio" name="resposta" id="opcao2">
+                <label for="opcao2">Ativar a autenticação em dois fatores.</label>
+                <br>
+
+                <input type="radio" name="resposta" id="opcao3">
+                <label for="opcao3">Clicar em qualquer link recebido.</label>
+                <br>
+
+                <button type="button">Conferir resposta</button>
+            </form>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre o projeto</h2>
+            <p>
+                Este projeto foi proposto pelo professor técnico Datan
+                para a Semana da Tecnologia de 2026.
+            </p>
+
+            <h3>Integrantes da equipe</h3>
+            <ul>
+                <li>Stênio Moraes</li>
+                <li>Renan Silva</li>
+                <li>Levi Mano</li>
+                <li>Kauan Rodrigues</li>
+                <li>Pedro Soares</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Segurança digital começa com nossas atitudes.</p>
+        <p>Projeto Mecanismos de Segurança - Semana da Tecnologia 2026.</p>
+    </footer>
+
+</body>
+</html>
