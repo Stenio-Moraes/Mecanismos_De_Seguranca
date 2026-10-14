@@ -11,20 +11,20 @@ Stênio Moraes <a href="https://github.com/Stenio-Moraes" target="_blank">
 (@Stenio-Moraes)
 </a>
 <br>
-Renan Silva <a href="https://github.com/Stenio-Moraes" target="_blank">
-(@Stenio-Moraes)
+Renan Silva <a href="https://github.com/Renansilva238" target="_blank">
+(@Renansilva238)
 </a>
 <br>
-Levi Mano <a href="https://github.com/Stenio-Moraes" target="_blank">
-(@Stenio-Moraes)
+Levi Mano <a href="https://github.com/LeviMano" target="_blank">
+(@LeviMano)
 </a>
 <br>
-Kauan Rodrigues <a href="https://github.com/Stenio-Moraes" target="_blank">
-(@Stenio-Moraes)
+Kauan Rodrigues <a href="https://github.com/KauanRodrigues-Dev" target="_blank">
+(@KauanRodrigues-Dev)
 </a>
 <br>
-Pedro Soares <a href="https://github.com/Stenio-Moraes" target="_blank">
-(@Stenio-Moraes)
+Pedro Soares <a href="https://github.com/pedrosoaresmarinhosoares799-wq" target="_blank">
+(@Pedrosoaresmarinhosoares799-wq)
 </a>
 <br>
 
