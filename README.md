@@ -1,47 +1,19 @@
-# Mecanismos de Segurança 🔐
+# Site — Mecanismos de Segurança
 
-Esse trabalho foi proposto pelo professor técnico Datan para a Semana da Tecnologia.
+Site educativo simples (HTML, CSS e JavaScript puro) do projeto escolar para a Semana da Computação 2026.
 
-O site foi criado para complementar nossa apresentação e ajudar outras pessoas a aprender mais sobre o assunto.
-**Objetivo do site:** compartilhar informações sobre segurança digital, mostrar ameaças comuns da internet e apresentar dicas de como proteger nossos dados no dia a dia. 
+## Arquivos
+- `index.html` — conteúdo e seções
+- `style.css` — cores e layout
+- `script.js` — menu no celular e quiz
 
-## Integrantes
+## Publicar no GitHub Pages
+1. Coloque `index.html`, `style.css` e `script.js` na raiz do repositório `Stenio-Moraes/Mecanismos_De_Seguranca`.
+2. No GitHub: **Settings → Pages → Branch: main / (root) → Save**.
+3. Em alguns minutos o site fica em `https://stenio-moraes.github.io/Mecanismos_De_Seguranca/`.
 
- Stênio Moraes <a href="https://github.com/Stenio-Moraes" target="_blank">
-(@Stenio-Moraes)
-</a>
-<br>
- Renan Silva <a href="https://github.com/Renansilva238" target="_blank">
-(@Renansilva238)
-</a>
-<br>
- Levi Mano <a href="https://github.com/LeviMano" target="_blank">
-(@LeviMano)
-</a>
-<br>
- Kauan Rodrigues <a href="https://github.com/KauanRodrigues-Dev" target="_blank">
-(@KauanRodrigues-Dev)
-</a>
-<br>
-  Pedro Soares <a href="https://github.com/pedrosoaresmarinhosoares799-wq" target="_blank">
-(@Pedrosoaresmarinhosoares799-wq)
-</a>
-<br>
+Não precisa instalar nada nem gerar versão de produção.
 
-Feito para a Semana da Tecnologia — 2026.
-
-## Uso de Inteligência Artificial
-
-Durante o desenvolvimento deste projeto, utilizamos ferramentas de Inteligência Artificial como apoio na organização das ideias, elaboração de conteúdos e auxílio na estruturação do site.
-
-Utilizamos a Inteligência Artificial como ferramenta de apoio nas seguintes etapas do projeto:
-
-- Slides: auxílio na organização dos conteúdos e na estruturação da apresentação. </p>
-- Organização da equipe: ajuda na divisão das tarefas e na definição das funções de cada integrante durante a apresentação.</p>
-- Desenvolvimento do site: auxílio na criação da estrutura HTML, organização das seções e elaboração dos textos informativos.</p>
-
-A IA foi utilizada como apoio durante o desenvolvimento do trabalho, com o objetivo de melhorar a organização e facilitar a execução das atividades.
-
-As sugestões geradas foram **analisadas e adaptadas pela equipe** de acordo com os objetivos do trabalho.
-
-Ela foi utilizada como ferramenta de apoio, enquanto a equipe participou da organização, revisão e desenvolvimento do projeto.
+## Depois de publicar
+- Em `index.html`, procure `EDITAR AQUI`: troque o `href="#"` do link do site pelo endereço definitivo.
+- Gere um QR Code com esse endereço, salve como `qrcode.png` e substitua o bloco do QR Code.
