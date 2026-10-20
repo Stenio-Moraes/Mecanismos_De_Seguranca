@@ -29,19 +29,3 @@ O site foi criado para complementar nossa apresentação e ajudar outras pessoas
 <br>
 
 Feito para a Semana da Tecnologia — 2026.
-
-## Uso de Inteligência Artificial
-
-Durante o desenvolvimento deste projeto, utilizamos ferramentas de Inteligência Artificial como apoio na organização das ideias, elaboração de conteúdos e auxílio na estruturação do site.
-
-Utilizamos a Inteligência Artificial como ferramenta de apoio nas seguintes etapas do projeto:
-
-- Slides: auxílio na organização dos conteúdos e na estruturação da apresentação. </p>
-- Organização da equipe: ajuda na divisão das tarefas e na definição das funções de cada integrante durante a apresentação.</p>
-- Desenvolvimento do site: auxílio na criação da estrutura HTML, organização das seções e elaboração dos textos informativos.</p>
-
-A IA foi utilizada como apoio durante o desenvolvimento do trabalho, com o objetivo de melhorar a organização e facilitar a execução das atividades.
-
-As sugestões geradas foram **analisadas e adaptadas pela equipe** de acordo com os objetivos do trabalho.
-
-Ela foi utilizada como ferramenta de apoio, enquanto a equipe participou da organização, revisão e desenvolvimento do projeto.
