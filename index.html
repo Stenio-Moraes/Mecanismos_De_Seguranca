@@ -8,18 +8,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- ===== MENU ===== -->
   <header class="topo">
     <nav class="menu container">
-      <a href="#inicio" class="logo">🛡️ Mecanismos de Segurança</a>
-      <button class="menu-botao" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <a href="#inicio" class="logo"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2 19 6v5.3c0 4.3-2.9 8-7 9.5-4.1-1.5-7-5.2-7-9.5V6z"/></svg><span>Mecanismos de Segurança</span></a>
+      <button class="menu-botao" aria-label="Abrir menu" aria-expanded="false"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
       <ul class="menu-links">
         <li><a href="#pilares">Pilares</a></li>
         <li><a href="#mecanismos">Mecanismos</a></li>
+        <li><a href="#laboratorio">Laboratório</a></li>
         <li><a href="#ameacas">Ameaças</a></li>
         <li><a href="#exemplo">Exemplo</a></li>
         <li><a href="#praticas">Boas práticas</a></li>
@@ -39,7 +40,7 @@
         <h1>Mecanismos de Segurança</h1>
         <p class="subtitulo">Como proteger nossos dados e sistemas no mundo digital.</p>
         <p class="texto-largo">Vivemos conectados e compartilhamos informações diariamente. Os mecanismos de segurança ajudam a proteger nossos dados, dispositivos e sistemas contra acessos não autorizados, alterações indevidas e outras ameaças digitais.</p>
-        <a href="#pilares" class="botao">Explorar o conteúdo ↓</a>
+        <a href="#pilares" class="botao">Explorar o conteúdo <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4.6v12.8"/><path d="m6.8 12.2 5.2 5.2 5.2-5.2"/></svg></a>
       </div>
     </section>
 
@@ -50,21 +51,21 @@
         <h2>Os três pilares da segurança</h2>
         <div class="grade grade-3">
           <article class="card">
-            <div class="icone">🔒</div>
+            <div class="icone"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.6" y="10.4" width="14.8" height="9.8" rx="2"/><path d="M8.2 10.4V7.9a3.8 3.8 0 0 1 7.6 0v2.5"/></svg></div>
             <h3>Confidencialidade</h3>
             <p class="termo">Confidentiality</p>
             <p>Protege as informações contra acessos não autorizados.</p>
             <p class="exemplo"><strong>No dia a dia:</strong> só você deve conseguir ler as mensagens do seu celular.</p>
           </article>
           <article class="card">
-            <div class="icone">✅</div>
+            <div class="icone"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.2"/><path d="m8.5 12.2 2.4 2.4 4.6-4.8"/></svg></div>
             <h3>Integridade</h3>
             <p class="termo">Integrity</p>
             <p>Preserva a correção e a confiabilidade dos dados.</p>
             <p class="exemplo"><strong>No dia a dia:</strong> sua nota no boletim não pode ser alterada por outra pessoa.</p>
           </article>
           <article class="card">
-            <div class="icone">🌐</div>
+            <div class="icone"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.2"/><path d="M3.8 12h16.4"/><path d="M12 3.8a12 12 0 0 1 0 16.4 12 12 0 0 1 0-16.4"/></svg></div>
             <h3>Disponibilidade</h3>
             <p class="termo">Availability</p>
             <p>Garante que informações e serviços estejam acessíveis quando necessário.</p>
@@ -81,30 +82,105 @@
         <h2>Principais mecanismos de proteção</h2>
         <div class="grade grade-2">
           <article class="card">
-            <div class="icone">🔑</div>
+            <div class="icone"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="12" r="3.6"/><path d="M11.6 12H21"/><path d="M17.6 12v3.2"/><path d="M20.6 12v2.4"/></svg></div>
             <h3>Senhas fortes</h3>
             <p class="termo">Strong passwords</p>
             <p>Dificultam o acesso indevido às contas. Uma boa senha é longa, mistura letras, números e símbolos e não é usada em outros sites.</p>
           </article>
           <article class="card">
-            <div class="icone">📱</div>
+            <div class="icone"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="3" width="10" height="18" rx="2.2"/><path d="M10.8 18h2.4"/></svg></div>
             <h3>Autenticação em dois fatores (2FA)</h3>
             <p class="termo">Two-factor authentication</p>
             <p>Adiciona uma etapa extra de verificação, como um código no celular. Mesmo que alguém descubra sua senha, ainda precisará desse segundo passo.</p>
           </article>
           <article class="card">
-            <div class="icone">🧩</div>
+            <div class="icone"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.6 3.6 7.6 20.4"/><path d="M16.4 3.6 14.4 20.4"/><path d="M4.2 9h15.6"/><path d="M3.8 15h15.6"/></svg></div>
             <h3>Criptografia</h3>
             <p class="termo">Encryption</p>
             <p>Transforma os dados para impedir que sejam compreendidos por pessoas sem autorização. Só quem tem a chave correta consegue ler a informação.</p>
           </article>
           <article class="card">
-            <div class="icone">🛡️</div>
+            <div class="icone"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2 19 6v5.3c0 4.3-2.9 8-7 9.5-4.1-1.5-7-5.2-7-9.5V6z"/><path d="m9 11.6 2.2 2.2 4-4.2"/></svg></div>
             <h3>Antivírus</h3>
             <p class="termo">Antivirus</p>
             <p>Ajuda a detectar, bloquear e remover programas maliciosos. Funciona melhor quando está sempre atualizado.</p>
           </article>
         </div>
+      </div>
+    </section>
+
+    <!-- ===== LABORATÓRIO (ferramentas interativas — tudo roda no navegador) ===== -->
+    <section id="laboratorio" class="secao">
+      <div class="container">
+        <p class="etiqueta">Laboratório — Na prática</p>
+        <h2>Laboratório de Segurança Digital</h2>
+        <p class="texto-largo">Três ferramentas para experimentar. Nada do que você digita sai do seu navegador nem fica salvo.</p>
+
+        <!-- A. Gerador de senhas -->
+        <article class="card ferramenta" id="gerador">
+          <h3><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="12" r="3.6"/><path d="M11.6 12H21"/><path d="M17.6 12v3.2"/><path d="M20.6 12v2.4"/></svg><span>Gerador de senhas seguras</span></h3>
+          <div class="saida-senha">
+            <output id="ger-senha" aria-live="polite">Clique em “Gerar senha”</output>
+          </div>
+          <label class="campo-faixa">Tamanho: <strong id="ger-tam-valor">16</strong> caracteres
+            <input type="range" id="ger-tamanho" min="8" max="32" value="16" />
+          </label>
+          <div class="opcoes-gerador">
+            <label><input type="checkbox" id="ger-mai" checked /> Maiúsculas (A-Z)</label>
+            <label><input type="checkbox" id="ger-min" checked /> Minúsculas (a-z)</label>
+            <label><input type="checkbox" id="ger-num" checked /> Números (0-9)</label>
+            <label><input type="checkbox" id="ger-sim" checked /> Símbolos (!@#…)</label>
+          </div>
+          <div class="quiz-botoes">
+            <button type="button" class="botao" id="ger-gerar">Gerar senha</button>
+            <button type="button" class="botao secundario" id="ger-copiar" disabled>Copiar</button>
+          </div>
+          <p class="status" id="ger-status" role="status"></p>
+          <p class="nota">Use senhas longas e exclusivas para cada conta. Não compartilhe suas senhas.</p>
+        </article>
+
+        <!-- B. Verificador de senhas -->
+        <article class="card ferramenta" id="verificador">
+          <h3><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.6 17.4a8 8 0 1 1 14.8 0"/><path d="m12 13.4 3.6-3.8"/><circle cx="12" cy="13.6" r="1.3"/></svg><span>Verificador de senhas</span></h3>
+          <p class="aviso">Para sua segurança, teste uma senha fictícia. Não digite sua senha real de uso pessoal.</p>
+          <div class="linha-campo">
+            <input type="password" id="ver-campo" class="campo" placeholder="Digite uma senha fictícia" autocomplete="off" spellcheck="false" aria-label="Senha fictícia para avaliar" />
+            <button type="button" class="botao secundario" id="ver-mostrar">Mostrar</button>
+            <button type="button" class="botao secundario" id="ver-limpar">Limpar</button>
+          </div>
+          <div class="medidor"><div id="ver-barra"></div></div>
+          <p id="ver-nivel" class="nivel" aria-live="polite">Aguardando uma senha…</p>
+          <ul id="ver-dicas" class="lista"></ul>
+          <p class="nota">A avaliação é uma estimativa educativa e não garante a segurança da senha.</p>
+        </article>
+
+        <!-- C. Criptografia -->
+        <article class="card ferramenta" id="cripto">
+          <h3><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.6 3.6 7.6 20.4"/><path d="M16.4 3.6 14.4 20.4"/><path d="M4.2 9h15.6"/><path d="M3.8 15h15.6"/></svg><span>Criptografia e descriptografia</span></h3>
+          <p>Usa AES-GCM (256 bits) com a chave derivada por PBKDF2 (SHA-256, 250.000 iterações). Cada operação usa salt e IV aleatórios.</p>
+          <div class="grade grade-2">
+            <div>
+              <label class="rotulo" for="cri-mensagem">Mensagem fictícia</label>
+              <textarea id="cri-mensagem" class="campo" rows="3" placeholder="Ex.: Encontro do grupo na biblioteca às 14h"></textarea>
+              <label class="rotulo" for="cri-chave">Chave de demonstração</label>
+              <input type="password" id="cri-chave" class="campo" autocomplete="off" placeholder="Ex.: chave-da-aula" />
+              <div class="quiz-botoes">
+                <button type="button" class="botao" id="cri-cifrar">Criptografar</button>
+              </div>
+            </div>
+            <div>
+              <label class="rotulo" for="cri-resultado">Texto criptografado</label>
+              <textarea id="cri-resultado" class="campo mono" rows="4" placeholder="O resultado aparece aqui (pode colar um texto para descriptografar)"></textarea>
+              <div class="quiz-botoes">
+                <button type="button" class="botao secundario" id="cri-decifrar">Descriptografar</button>
+              </div>
+              <label class="rotulo" for="cri-recuperada">Mensagem recuperada</label>
+              <output id="cri-recuperada" class="campo saida">—</output>
+            </div>
+          </div>
+          <p class="status" id="cri-status" role="status"></p>
+          <p class="nota">Ferramenta educativa para demonstrar conceitos de criptografia. Não utilize esta demonstração como único meio de proteger informações sensíveis.</p>
+        </article>
       </div>
     </section>
 
@@ -114,15 +190,15 @@
         <p class="etiqueta">03 — Riscos</p>
         <h2>Ameaças digitais</h2>
         <div class="grade grade-4">
-          <article class="card perigo"><div class="icone">🎣</div><h3>Phishing</h3><p>Mensagens ou páginas falsas utilizadas para enganar as pessoas e obter informações.</p></article>
-          <article class="card perigo"><div class="icone">🐛</div><h3>Malware</h3><p>Programas maliciosos que podem prejudicar dispositivos ou dados.</p></article>
-          <article class="card perigo"><div class="icone">🔓</div><h3>Senhas fracas</h3><p class="termo">Weak passwords</p><p>Senhas curtas ou previsíveis que facilitam tentativas de acesso.</p></article>
-          <article class="card perigo"><div class="icone">🔗</div><h3>Links suspeitos</h3><p class="termo">Suspicious links</p><p>Links que podem direcionar para golpes ou páginas maliciosas.</p></article>
+          <article class="card perigo"><div class="icone"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.4" y="5.4" width="17.2" height="13.2" rx="2"/><path d="m4.4 7.4 7.6 5.6 7.6-5.6"/></svg></div><h3>Phishing</h3><p>Mensagens ou páginas falsas utilizadas para enganar as pessoas e obter informações.</p></article>
+          <article class="card perigo"><div class="icone"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.4 9.4a3.6 3.6 0 0 1 7.2 0v3.6a3.6 3.6 0 0 1-7.2 0z"/><path d="M8.4 10.6H4.6M8.4 13.4H5M8.4 16l-2.4 2.4M15.6 10.6h3.8M15.6 13.4h3.4M15.6 16l2.4 2.4M9.8 6.4 8.6 4.4M14.2 6.4l1.2-2"/></svg></div><h3>Malware</h3><p>Programas maliciosos que podem prejudicar dispositivos ou dados.</p></article>
+          <article class="card perigo"><div class="icone"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.6" y="10.4" width="14.8" height="9.8" rx="2"/><path d="M8.2 10.4V7.9a3.8 3.8 0 0 1 7.4-1"/></svg></div><h3>Senhas fracas</h3><p class="termo">Weak passwords</p><p>Senhas curtas ou previsíveis que facilitam tentativas de acesso.</p></article>
+          <article class="card perigo"><div class="icone"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.2 13.6a3.6 3.6 0 0 0 5.1 0l2.7-2.7a3.6 3.6 0 0 0-5.1-5.1l-1.1 1.1"/><path d="M13.8 10.4a3.6 3.6 0 0 0-5.1 0L6 13.1a3.6 3.6 0 0 0 5.1 5.1l1.1-1.1"/></svg></div><h3>Links suspeitos</h3><p class="termo">Suspicious links</p><p>Links que podem direcionar para golpes ou páginas maliciosas.</p></article>
         </div>
 
         <!-- Exemplo fictício de mensagem suspeita -->
         <div class="email-ficticio">
-          <span class="selo">⚠ Mensagem fictícia — apenas exemplo</span>
+          <span class="selo"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4.4 2.9 19.9h18.2z"/><path d="M12 10.2v4.2"/><path d="M12 17.4h.01"/></svg><span>Mensagem fictícia — apenas exemplo</span></span>
           <div class="email">
             <p><span class="marca">1</span> <strong>De:</strong> suporte@banco-seguro-atualizacao.xyz</p>
             <p><strong>Assunto:</strong> <span class="marca">2</span> URGENTE: sua conta será bloqueada hoje!</p>
@@ -134,6 +210,7 @@
             <li><strong>Pedido de senha ou dados pessoais.</strong></li>
           </ol>
           <p class="aviso">Desconfie sempre de mensagens que solicitem senhas. Empresas sérias não pedem sua senha por e-mail ou mensagem.</p>
+          <p class="nota"><strong>Como reconhecer phishing:</strong> confira o endereço do remetente, desconfie de pressa e ameaças, passe o mouse sobre links antes de clicar e, na dúvida, confirme pelo site ou aplicativo oficial — nunca pelo link da mensagem.</p>
         </div>
       </div>
     </section>
@@ -178,12 +255,12 @@
         <p class="etiqueta">05 — Atitudes</p>
         <h2>Boas práticas</h2>
         <ul class="praticas">
-          <li>✔ Utilizar senhas fortes e exclusivas.</li>
-          <li>✔ Ativar a autenticação em dois fatores.</li>
-          <li>✔ Manter sistemas e aplicativos atualizados.</li>
-          <li>✔ Evitar links e anexos suspeitos.</li>
-          <li>✔ Proteger dados pessoais.</li>
-          <li>✔ Fazer cópias de segurança dos arquivos importantes.</li>
+          <li>Utilizar senhas fortes e exclusivas.</li>
+          <li>Ativar a autenticação em dois fatores.</li>
+          <li>Manter sistemas e aplicativos atualizados.</li>
+          <li>Evitar links e anexos suspeitos.</li>
+          <li>Proteger dados pessoais.</li>
+          <li>Fazer cópias de segurança dos arquivos importantes.</li>
         </ul>
       </div>
     </section>
@@ -216,11 +293,11 @@
           <article class="card">
             <h3>Integrantes da equipe</h3>
             <ul class="equipe">
-              <li>Stênio Moraes</li>
-              <li>Renan Silva</li>
-              <li>Levi Mano</li>
-              <li>Kauan Rodrigues</li>
-              <li>Pedro Soares</li>
+              <li>Stênio Moraes — <a href="https://github.com/Stenio-Moraes" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              <li>Renan Silva — <a href="https://github.com/Renansilva238" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              <li>Levi Mano — <a href="https://github.com/LeviMano" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              <li>Kauan Rodrigues — <a href="https://github.com/KauanRodrigues-Dev" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              <li>Pedro Soares — <a href="https://github.com/Pedrosoaresmarinhosoares799-wq" target="_blank" rel="noopener noreferrer">GitHub</a></li>
             </ul>
           </article>
           <article class="card">
@@ -239,19 +316,19 @@
         <p class="texto-largo">A apresentação termina aqui, mas sua segurança digital continua. Explore o conteúdo, compartilhe o conhecimento e coloque as boas práticas em ação.</p>
         <div class="acesse">
           <div class="links-projeto">
-            <!-- EDITAR AQUI: troque "#" pelo endereço definitivo do site depois de publicado
-                 e remova o atributo aria-disabled e a classe "pendente". -->
-            <a href="#" class="link-card pendente" aria-disabled="true" id="link-site">
-              <span class="icone">🌐</span>
-              <span><strong>Acessar o site educativo</strong><br /><small>Endereço a definir após a publicação</small></span>
+            <a href="https://stenio-moraes.github.io/Mecanismos_De_Seguranca/" target="_blank" rel="noopener noreferrer" class="link-card">
+              <span class="icone"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.2"/><path d="M3.8 12h16.4"/><path d="M12 3.8a12 12 0 0 1 0 16.4 12 12 0 0 1 0-16.4"/></svg></span>
+              <span><strong>Site educativo</strong><br /><small>stenio-moraes.github.io/Mecanismos_De_Seguranca/</small></span>
             </a>
             <a href="https://github.com/Stenio-Moraes/Mecanismos_De_Seguranca" target="_blank" rel="noopener noreferrer" class="link-card">
-              <span class="icone">💻</span>
-              <span><strong>Ver o repositório no GitHub</strong><br /><small>github.com/Stenio-Moraes/Mecanismos_De_Seguranca</small></span>
+              <span class="icone"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-3.9c0-1.2-.4-2-1-2.5 3.2-.4 6.5-1.6 6.5-6.9.1-1.4-.5-2.8-1.5-3.8.3-1.1.2-2.3-.3-3.3 0 0-1.2.1-3.2 1.6-1.7-.5-3.6-.7-5.5-.7s-3.8.2-5.5.7C4.5 1.7 3.3 1.6 3.3 1.6c-.5 1-.6 2.2-.3 3.3-1 1-1.6 2.4-1.5 3.8 0 5.3 3.3 6.5 6.5 6.9-.6.5-1 1.3-1 2.5V22"/><path d="M9 19.5c-4 1.4-4.7-2.2-6.3-2.7"/></svg></span>
+              <span><strong>Repositório no GitHub</strong><br /><small>github.com/Stenio-Moraes/Mecanismos_De_Seguranca</small></span>
             </a>
           </div>
-          <!-- EDITAR AQUI: substitua este bloco por <img src="qrcode.png" alt="QR Code do site"> quando o site estiver publicado -->
-          <div class="qrcode">QR CODE<br /><small>espaço reservado</small></div>
+          <figure class="qrcode-img">
+            <img src="qrcode.png" alt="QR Code para o site educativo" width="180" height="180" />
+            <figcaption>Aponte a câmera para acessar o site</figcaption>
+          </figure>
         </div>
         <p class="frase-final">“Security starts with us.”</p>
         <p class="traducao">A segurança começa conosco.</p>
@@ -268,6 +345,6 @@
     </div>
   </footer>
 
-  <script src="./js/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
