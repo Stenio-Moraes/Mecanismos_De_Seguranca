@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Simuladores de senhas, 2FA, criptografia, firewall e backup que rodam no navegador.">
+<meta property="og:title" content="Laboratório — Mecanismos de Segurança">
+<meta property="og:description" content="Simuladores de senhas, 2FA, criptografia, firewall e backup que rodam no navegador.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<title>Laboratório — Mecanismos de Segurança</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="site.css">
+<link rel="icon" href="favicon.ico">
+</head>
+<body>
+
+
+  <!-- ===== MENU ===== -->
+  <header class="topo">
+    <nav class="menu container">
+      <a href="index.html" class="logo"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2 19 6v5.3c0 4.3-2.9 8-7 9.5-4.1-1.5-7-5.2-7-9.5V6z"/></svg><span>Mecanismos de Segurança</span></a>
+      <button class="menu-botao" aria-label="Abrir menu" aria-expanded="false"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <ul class="menu-links">
+        <li><a href="#lab-senhas">Senhas</a></li>
+        <li><a href="#lab-2fa">2FA</a></li>
+        <li><a href="#lab-cripto">Criptografia</a></li>
+        <li><a href="#lab-firewall">Firewall</a></li>
+        <li><a href="#lab-backup">Backup</a></li>
+        <li><a href="index.html" class="menu-lab">Voltar ao site</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="secao inicio inicio-lab">
+      <div class="container">
+        <p class="etiqueta">Semana da Computação • Laboratório</p>
+        <h1>Laboratório de Segurança Digital</h1>
+        <p class="texto-largo">Simuladores para experimentar cada mecanismo. Tudo roda no seu navegador: nada é enviado nem salvo. Use sempre dados fictícios.</p>
+      </div>
+    </section>
+    <section id="lab-senhas" class="secao alternada">
+      <div class="container">
+        <p class="etiqueta">Simulador 1</p>
+        <h2>Senhas seguras</h2>
+        <p class="texto-largo">Gere uma senha forte e veja como o tamanho e a variedade de caracteres mudam a força.</p><article class="card ferramenta" id="gerador">
+          <h3><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="12" r="3.6"/><path d="M11.6 12H21"/><path d="M17.6 12v3.2"/><path d="M20.6 12v2.4"/></svg><span>Gerador de senhas seguras</span></h3>
+          <div class="saida-senha">
+            <output id="ger-senha" aria-live="polite">Clique em “Gerar senha”</output>
+          </div>
+          <label class="campo-faixa">Tamanho: <strong id="ger-tam-valor">16</strong> caracteres
+            <input type="range" id="ger-tamanho" min="8" max="32" value="16" />
+          </label>
+          <div class="opcoes-gerador">
+            <label><input type="checkbox" id="ger-mai" checked /> Maiúsculas (A-Z)</label>
+            <label><input type="checkbox" id="ger-min" checked /> Minúsculas (a-z)</label>
+            <label><input type="checkbox" id="ger-num" checked /> Números (0-9)</label>
+            <label><input type="checkbox" id="ger-sim" checked /> Símbolos (!@#…)</label>
+          </div>
+          <div class="quiz-botoes">
+            <button type="button" class="botao" id="ger-gerar">Gerar senha</button>
+            <button type="button" class="botao secundario" id="ger-copiar" disabled>Copiar</button>
+          </div>
+          <p class="status" id="ger-status" role="status"></p>
+          <p class="nota">Use senhas longas e exclusivas para cada conta. Não compartilhe suas senhas.</p>
+        </article><article class="card ferramenta" id="verificador">
+          <h3><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.6 17.4a8 8 0 1 1 14.8 0"/><path d="m12 13.4 3.6-3.8"/><circle cx="12" cy="13.6" r="1.3"/></svg><span>Verificador de senhas</span></h3>
+          <p class="aviso">Para sua segurança, teste uma senha fictícia. Não digite sua senha real de uso pessoal.</p>
+          <div class="linha-campo">
+            <input type="password" id="ver-campo" class="campo" placeholder="Digite uma senha fictícia" autocomplete="off" spellcheck="false" aria-label="Senha fictícia para avaliar" />
+            <button type="button" class="botao secundario" id="ver-mostrar">Mostrar</button>
+            <button type="button" class="botao secundario" id="ver-limpar">Limpar</button>
+          </div>
+          <div class="medidor"><div id="ver-barra"></div></div>
+          <p id="ver-nivel" class="nivel" aria-live="polite">Aguardando uma senha…</p>
+          <ul id="ver-dicas" class="lista"></ul>
+          <p class="nota">A avaliação é uma estimativa educativa e não garante a segurança da senha.</p>
+        </article>
+      </div>
+    </section>
+    <section id="lab-2fa" class="secao">
+      <div class="container">
+        <p class="etiqueta">Simulador 2</p>
+        <h2>Autenticação em dois fatores</h2>
+        <p class="texto-largo">Compare o login só com senha e com um segundo fator, inclusive quando um invasor tem a senha.</p>
+        <article class="card ferramenta" id="demo2fa">
+          <h3><span>Demonstração fictícia de 2FA</span></h3>
+          <p class="aviso">Simulação educativa: nenhuma senha ou dado pessoal é solicitado. A conta “aluno.demo” é fictícia.</p>
+          <div class="grade grade-2">
+            <div>
+              <p class="rotulo">Modo de proteção</p>
+              <div class="opcoes-gerador">
+                <label><input type="radio" name="fa-modo" value="senha" /> Apenas senha</label>
+                <label><input type="radio" name="fa-modo" value="2fa" checked /> Senha + 2FA</label>
+              </div>
+              <div class="quiz-botoes">
+                <button type="button" class="botao" id="fa-entrar">Entrar como aluno.demo</button>
+                <button type="button" class="botao secundario" id="fa-invasor">Simular invasor com senha vazada</button>
+              </div>
+            </div>
+            <div class="celular" id="fa-celular" hidden>
+              <p class="rotulo">Aplicativo autenticador (simulado)</p>
+              <output id="fa-codigo" class="codigo-2fa">------</output>
+              <div class="medidor"><div id="fa-tempo"></div></div>
+              <p class="nota">O código muda a cada 30 segundos.</p>
+            </div>
+          </div>
+          <div class="linha-campo" id="fa-etapa2" hidden>
+            <input type="text" id="fa-campo" class="campo mono" inputmode="numeric" maxlength="6" placeholder="Digite o código de 6 dígitos mostrado no app simulado" autocomplete="off" aria-label="Código fictício" />
+            <button type="button" class="botao" id="fa-verificar">Verificar</button>
+          </div>
+          <p class="status" id="fa-status" role="status"></p>
+        </article>
+      </div>
+    </section>
+    <section id="lab-cripto" class="secao alternada">
+      <div class="container">
+        <p class="etiqueta">Simulador 3</p>
+        <h2>Criptografia</h2>
+        <p class="texto-largo">Do método de Júlio César à criptografia usada hoje em bancos e aplicativos de mensagem.</p>
+        <article class="card ferramenta" id="cesar">
+          <h3><span>Cifra de César — passo a passo</span></h3>
+          <p>A forma mais antiga de criptografia: cada letra anda algumas posições no alfabeto. A quantidade de posições é a chave.</p>
+          <label class="rotulo" for="ces-texto">Mensagem fictícia</label>
+          <input type="text" id="ces-texto" class="campo" value="PROVA NA SEXTA" maxlength="60" autocomplete="off" />
+          <label class="campo-faixa">Chave (deslocamento): <strong id="ces-valor">3</strong>
+            <input type="range" id="ces-chave" min="1" max="25" value="3" /></label>
+          <div class="alfabetos" aria-hidden="true"><div id="ces-alfa1"></div><div id="ces-alfa2"></div></div>
+          <p class="rotulo">Texto criptografado</p>
+          <output id="ces-saida" class="campo saida">—</output>
+          <p class="nota">Por que não é usada hoje? Só existem 25 chaves possíveis — um computador testa todas em milésimos de segundo. Por isso a ferramenta abaixo usa AES, com chaves de 256 bits.</p>
+        </article><article class="card ferramenta" id="cripto">
+          <h3><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.6 3.6 7.6 20.4"/><path d="M16.4 3.6 14.4 20.4"/><path d="M4.2 9h15.6"/><path d="M3.8 15h15.6"/></svg><span>Criptografia e descriptografia</span></h3>
+          <p>Usa AES-GCM (256 bits) com a chave derivada por PBKDF2 (SHA-256, 250.000 iterações). Cada operação usa salt e IV aleatórios.</p>
+          <div class="grade grade-2">
+            <div>
+              <label class="rotulo" for="cri-mensagem">Mensagem fictícia</label>
+              <textarea id="cri-mensagem" class="campo" rows="3" placeholder="Ex.: Encontro do grupo na biblioteca às 14h"></textarea>
+              <label class="rotulo" for="cri-chave">Chave de demonstração</label>
+              <input type="password" id="cri-chave" class="campo" autocomplete="off" placeholder="Ex.: chave-da-aula" />
+              <div class="quiz-botoes">
+                <button type="button" class="botao" id="cri-cifrar">Criptografar</button>
+              </div>
+            </div>
+            <div>
+              <label class="rotulo" for="cri-resultado">Texto criptografado</label>
+              <textarea id="cri-resultado" class="campo mono" rows="4" placeholder="O resultado aparece aqui (pode colar um texto para descriptografar)"></textarea>
+              <div class="quiz-botoes">
+                <button type="button" class="botao secundario" id="cri-decifrar">Descriptografar</button>
+              </div>
+              <label class="rotulo" for="cri-recuperada">Mensagem recuperada</label>
+              <output id="cri-recuperada" class="campo saida">—</output>
+            </div>
+          </div>
+          <p class="status" id="cri-status" role="status"></p>
+          <p class="nota">Ferramenta educativa para demonstrar conceitos de criptografia. Não utilize esta demonstração como único meio de proteger informações sensíveis.</p>
+        </article>
+      </div>
+    </section>
+    <section id="lab-firewall" class="secao">
+      <div class="container">
+        <p class="etiqueta">Simulador 4</p>
+        <h2>Firewall</h2>
+        <p class="texto-largo">Veja na prática como regras simples decidem o que entra na rede.</p>
+        <article class="card ferramenta" id="sim-firewall">
+          <h3><span>Simulador de firewall</span></h3>
+          <p>Marque quais serviços a rede permite receber. Depois envie o tráfego e veja o firewall decidir. Todas as conexões são fictícias.</p>
+          <p class="aviso"><strong>Cenário:</strong> a turma publica um site com HTTPS. A porta 443 precisa estar aberta; o acesso remoto não é necessário. Compare o resultado ao liberar as portas 23 e 3389.</p>
+          <div class="opcoes-gerador" id="fw-regras">
+            <label><input type="checkbox" value="443" checked /> Sites seguros (porta 443 — HTTPS)</label>
+            <label><input type="checkbox" value="80" /> Sites sem criptografia (porta 80 — HTTP)</label>
+            <label><input type="checkbox" value="23" /> Acesso remoto antigo (porta 23 — Telnet)</label>
+            <label><input type="checkbox" value="3389" /> Área de trabalho remota (porta 3389)</label>
+          </div>
+          <div class="quiz-botoes">
+            <button type="button" class="botao" id="fw-enviar">Enviar tráfego</button>
+            <button type="button" class="botao secundario" id="fw-limpar">Limpar</button>
+          </div>
+          <div class="tabela-rolagem"><table class="tabela" id="fw-tabela" hidden>
+            <thead><tr><th>Origem</th><th>Porta</th><th>O que é</th><th>Decisão</th></tr></thead><tbody></tbody>
+          </table></div>
+          <p class="status" id="fw-status" role="status"></p>
+          <p class="nota">Modelo simplificado de conexões recebidas: a decisão considera somente a porta. Firewalls reais também podem avaliar origem, direção e estado da conexão. HTTPS protege o transporte, mas não garante que um site seja confiável; permitir uma conexão não significa que uma invasão teve sucesso.</p>
+          <p class="nota">Regra de ouro: bloquear tudo por padrão e liberar só o que é necessário (princípio do menor privilégio).</p>
+        </article>
+      </div>
+    </section>
+    <section id="lab-backup" class="secao alternada">
+      <div class="container">
+        <p class="etiqueta">Simulador 5</p>
+        <h2>Backup e recuperação</h2>
+        <p class="texto-largo">Descubra por que a regra 3-2-1 existe.</p>
+        <article class="card ferramenta" id="sim-backup">
+          <h3><span>Simulador de ataque e recuperação</span></h3>
+          <p>Escolha onde estão as cópias dos trabalhos escolares e depois provoque um incidente.</p>
+          <p class="rotulo">Cópias que existem</p>
+          <div class="opcoes-gerador" id="bk-copias">
+            <label><input type="checkbox" value="pendrive" /> Pen drive sempre conectado ao PC</label>
+            <label><input type="checkbox" value="hd" /> HD externo desconectado após a cópia</label>
+            <label><input type="checkbox" value="nuvem" /> Nuvem com histórico de versões</label>
+          </div>
+          <p class="nota"><strong>Regra 3-2-1:</strong> mantenha 3 cópias no total (a original e 2 backups), em 2 tipos de mídia, com 1 cópia fora do local. Uma cópia que sobrevive não comprova, sozinha, que essa regra foi atendida.</p>
+          <p class="aviso"><strong>Compare:</strong> selecione apenas o HD externo e teste ransomware e incêndio. Depois adicione a nuvem e repita o incêndio. Neste exemplo, o HD fica em casa, o pen drive acompanha o notebook e a nuvem fica fora de casa, com versões anteriores recuperáveis e conta protegida.</p>
+          <p class="rotulo">Incidente</p>
+          <div class="quiz-botoes">
+            <button type="button" class="botao secundario" data-incidente="ransomware">Ransomware</button>
+            <button type="button" class="botao secundario" data-incidente="roubo">Notebook roubado</button>
+            <button type="button" class="botao secundario" data-incidente="incendio">Incêndio em casa</button>
+          </div>
+          <ul class="lista" id="bk-resultado"></ul>
+          <p class="status" id="bk-status" role="status"></p>
+          <p class="nota">Na prática, verifique se o backup terminou e teste a restauração dos arquivos. Uma pasta sincronizada sem histórico pode repetir uma exclusão ou alteração indesejada; sincronização não substitui um backup independente.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer class="rodape">
+    <div class="container">
+      <p><strong>Mecanismos de Segurança</strong> • Semana da Computação — 2026</p>
+      <p>Segurança digital começa com nossas atitudes.</p>
+      <p><a href="https://github.com/Stenio-Moraes/Mecanismos_De_Seguranca" target="_blank" rel="noopener noreferrer">Código-fonte no GitHub</a></p>
+    </div>
+  </footer>
+<script src="script.js" defer></script>
+<script>
+window.addEventListener('load', () => {
+  if (window.iniciarSite) window.iniciarSite();
+  if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();
+});
+</script>
+</body>
+</html>
