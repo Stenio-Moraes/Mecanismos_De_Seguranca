@@ -11,8 +11,7 @@
 <title>Mecanismos de Segurança — Semana da Computação 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="site.css">
-<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="CSS/site.css">
 </head>
 <body>
 
@@ -33,7 +32,7 @@
         <li><a href="#ameacas">Ameaças</a></li>
         <li><a href="#praticas">Boas práticas</a></li>
         <li><a href="#quiz">Quiz</a></li>
-        <li><a href="laboratorio.html" class="menu-lab">Laboratório</a></li>
+        <li><a href="PAGES/laboratorio.html" class="menu-lab">Laboratório</a></li>
       </ul>
     </nav>
   </header>
@@ -89,7 +88,7 @@
         <h2>Senhas seguras</h2>
         <p class="texto-largo">A senha é a primeira barreira de uma conta. Senhas curtas ou repetidas em vários sites são descobertas com facilidade por ataques automatizados.</p>
         <div class="grade grade-2"><article class="card"><h3>Como funciona</h3><p>Cada caractere a mais multiplica as combinações possíveis. Uma senha de 8 letras minúsculas tem cerca de 200 bilhões de combinações; uma de 16 caracteres variados ultrapassa números astronômicos, tornando a tentativa e erro inviável.</p><p class="exemplo"><strong>Exemplo:</strong> “maria123” é quebrada em segundos; “Trem-Azul-Café-Noturno-42” resiste por séculos.</p></article><article class="card"><h3>Boas práticas</h3><ul class="lista dica"><li>Use pelo menos 12 caracteres — frases longas funcionam bem.</li><li>Uma senha diferente para cada conta.</li><li>Evite nomes, datas e sequências como 123456.</li><li>Use um gerenciador de senhas para lembrar por você.</li><li>Troque a senha se houver suspeita de vazamento.</li></ul></article></div>
-        <a class="card link-lab" href="laboratorio.html#lab-senhas">
+        <a class="card link-lab" href="PAGES/laboratorio.html#lab-senhas">
           <span><strong>Experimente no Laboratório</strong><br /><small>Gerador de senhas e avaliador de força, rodando só no seu navegador.</small></span>
           <span class="seta" aria-hidden="true">&rarr;</span>
         </a>
@@ -119,7 +118,7 @@
         <h2>Autenticação em dois fatores (2FA)</h2>
         <p class="texto-largo">A verificação em duas etapas exige, além da senha (algo que você sabe), um segundo fator: algo que você tem (celular, chave física) ou algo que você é (digital, rosto).</p>
         <div class="grade grade-2"><article class="card"><h3>Apenas senha</h3><ol class="passos"><li>Você digita a senha.</li><li>O sistema libera o acesso.</li></ol><p class="exemplo"><strong>Risco:</strong> se a senha vazar, qualquer pessoa entra na conta.</p></article><article class="card"><h3>Senha + segundo fator</h3><ol class="passos"><li>Você digita a senha.</li><li>O sistema pede um código temporário do seu aplicativo autenticador.</li><li>Só com os dois o acesso é liberado.</li></ol><p class="exemplo"><strong>Proteção:</strong> mesmo com a senha vazada, o invasor não tem o seu celular.</p></article></div>
-        <a class="card link-lab" href="laboratorio.html#lab-2fa">
+        <a class="card link-lab" href="PAGES/laboratorio.html#lab-2fa">
           <span><strong>Experimente no Laboratório</strong><br /><small>Simulação de login com e sem verificação em duas etapas.</small></span>
           <span class="seta" aria-hidden="true">&rarr;</span>
         </a>
@@ -144,7 +143,7 @@
         <h2>Criptografia</h2>
         <p class="texto-largo">A criptografia transforma uma mensagem legível em um texto embaralhado, que só pode ser revertido por quem possui a chave correta.</p>
         <div class="grade grade-3"><article class="card"><h3>Texto original</h3><p class="termo">Plaintext</p><p>A mensagem legível, como “Prova na sexta”.</p></article><article class="card"><h3>Chave</h3><p class="termo">Key</p><p>O segredo que controla o embaralhamento. Sem ela, não é possível desfazer.</p></article><article class="card"><h3>Texto criptografado</h3><p class="termo">Ciphertext</p><p>O resultado ilegível, como “x9Fq…”. Pode trafegar pela internet sem revelar o conteúdo.</p></article></div><p class="exemplo bloco-exemplo"><strong>No dia a dia:</strong> o cadeado na barra do navegador (HTTPS) e a criptografia de ponta a ponta dos aplicativos de mensagem usam esse princípio.</p>
-        <a class="card link-lab" href="laboratorio.html#lab-cripto">
+        <a class="card link-lab" href="PAGES/laboratorio.html#lab-cripto">
           <span><strong>Experimente no Laboratório</strong><br /><small>Cifra de César passo a passo e criptografia AES real.</small></span>
           <span class="seta" aria-hidden="true">&rarr;</span>
         </a>
@@ -182,7 +181,7 @@
           <article class="card"><h3>Como funciona</h3><p>Cada conexão tem origem, destino e porta (o “número” de um serviço, como 443 para sites com HTTPS). O firewall compara isso com uma lista de regras e aplica a que combinar.</p></article>
           <article class="card"><h3>Exemplo prático</h3><p>Em casa, o roteador bloqueia conexões vindas da internet que ninguém pediu, mas deixa passar a resposta do site que você abriu.</p><p class="exemplo"><strong>Limite:</strong> o firewall não impede que você mesmo clique num link de phishing — por isso ele trabalha junto com as outras camadas.</p></article>
         </div>
-        <a class="card link-lab" href="laboratorio.html#lab-firewall">
+        <a class="card link-lab" href="PAGES/laboratorio.html#lab-firewall">
           <span><strong>Experimente no Laboratório</strong><br /><small>Monte regras e veja quais conexões passam ou são bloqueadas.</small></span>
           <span class="seta" aria-hidden="true">&rarr;</span>
         </a>
@@ -248,7 +247,7 @@
           <article class="card"><h3>1 fora de casa</h3><p>Uma cópia em outro local protege contra roubo, incêndio ou enchente.</p></article>
         </div>
         <p class="exemplo bloco-exemplo"><strong>Recuperação:</strong> backup que nunca foi testado pode falhar na hora. De tempos em tempos, tente restaurar um arquivo para confirmar que a cópia funciona.</p>
-        <a class="card link-lab" href="laboratorio.html#lab-backup">
+        <a class="card link-lab" href="PAGES/laboratorio.html#lab-backup">
           <span><strong>Experimente no Laboratório</strong><br /><small>Simule um ataque de ransomware e veja quais estratégias de backup salvam os arquivos.</small></span>
           <span class="seta" aria-hidden="true">&rarr;</span>
         </a>
@@ -397,7 +396,7 @@
     </div>
   </footer>
 
-<script src="script.js" defer></script>
+<script src="JS/script.js" defer></script>
 <script>
 window.addEventListener('load', () => {
   if (window.iniciarSite) window.iniciarSite();
