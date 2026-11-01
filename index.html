@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mecanismos de Segurança — Semana da Computação 2026</title>
-  <meta name="description" content="Site educativo do projeto escolar Mecanismos de Segurança: pilares, mecanismos de proteção, ameaças digitais, boas práticas e quiz." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="CSS/style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Projeto escolar sobre mecanismos de segurança digital: senhas, 2FA, criptografia, antivírus e ferramentas interativas.">
+<meta property="og:title" content="Mecanismos de Segurança — Semana da Computação 2026">
+<meta property="og:description" content="Projeto escolar sobre mecanismos de segurança digital: senhas, 2FA, criptografia, antivírus e ferramentas interativas.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<title>Mecanismos de Segurança — Semana da Computação 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="site.css">
+<link rel="icon" href="favicon.ico">
 </head>
 <body>
+
 
   <!-- ===== MENU ===== -->
   <header class="topo">
@@ -18,15 +23,17 @@
       <a href="#inicio" class="logo"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2 19 6v5.3c0 4.3-2.9 8-7 9.5-4.1-1.5-7-5.2-7-9.5V6z"/></svg><span>Mecanismos de Segurança</span></a>
       <button class="menu-botao" aria-label="Abrir menu" aria-expanded="false"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
       <ul class="menu-links">
-        <li><a href="#pilares">Pilares</a></li>
-        <li><a href="#mecanismos">Mecanismos</a></li>
-        <li><a href="#laboratorio">Laboratório</a></li>
+        <li><a href="#introducao">Introdução</a></li>
+        <li><a href="#senhas">Senhas</a></li>
+        <li><a href="#dois-fatores">2FA</a></li>
+        <li><a href="#criptografia">Criptografia</a></li>
+        <li><a href="#antivirus">Antivírus</a></li>
+        <li><a href="#firewall">Firewall</a></li>
+        <li><a href="#backup">Backup</a></li>
         <li><a href="#ameacas">Ameaças</a></li>
-        <li><a href="#exemplo">Exemplo</a></li>
         <li><a href="#praticas">Boas práticas</a></li>
         <li><a href="#quiz">Quiz</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#acesse">Acesse</a></li>
+        <li><a href="laboratorio.html" class="menu-lab">Laboratório</a></li>
       </ul>
     </nav>
   </header>
@@ -40,16 +47,16 @@
         <h1>Mecanismos de Segurança</h1>
         <p class="subtitulo">Como proteger nossos dados e sistemas no mundo digital.</p>
         <p class="texto-largo">Vivemos conectados e compartilhamos informações diariamente. Os mecanismos de segurança ajudam a proteger nossos dados, dispositivos e sistemas contra acessos não autorizados, alterações indevidas e outras ameaças digitais.</p>
-        <a href="#pilares" class="botao">Explorar o conteúdo <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4.6v12.8"/><path d="m6.8 12.2 5.2 5.2 5.2-5.2"/></svg></a>
+        <a href="#introducao" class="botao">Explorar o conteúdo <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4.6v12.8"/><path d="m6.8 12.2 5.2 5.2 5.2-5.2"/></svg></a>
       </div>
     </section>
-
-    <!-- ===== 2. PILARES ===== -->
-    <section id="pilares" class="secao">
+    <!-- ===== PARTE 1 ===== -->
+    <section id="introducao" class="secao">
       <div class="container">
-        <p class="etiqueta">01 — Fundamentos</p>
-        <h2>Os três pilares da segurança</h2>
-        <div class="grade grade-3">
+        <p class="etiqueta">Parte 1 — Introdução</p>
+        <h2>Introdução à segurança digital</h2>
+        <p class="texto-largo">Mecanismos de segurança são recursos, técnicas e hábitos usados para proteger dados, dispositivos e sistemas contra acessos não autorizados, alterações indevidas e interrupções.</p>
+        <div class="grade grade-2"><article class="card"><h3>O que são mecanismos de segurança?</h3><p>São as “trancas” do mundo digital: senhas, verificação em duas etapas, criptografia, antivírus, backups e atualizações. Cada um protege uma parte diferente do sistema, e juntos formam camadas de proteção.</p></article><article class="card"><h3>Por que proteger dados e sistemas?</h3><p>Fotos, conversas, notas escolares e dados bancários têm valor. Um vazamento pode causar prejuízo financeiro, exposição pessoal e perda de confiança. Proteger é mais fácil e barato do que remediar.</p></article></div><h3 class="subtitulo-secao">Os três pilares: CID</h3><div class="grade grade-3">
           <article class="card">
             <div class="icone"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.6" y="10.4" width="14.8" height="9.8" rx="2"/><path d="M8.2 10.4V7.9a3.8 3.8 0 0 1 7.6 0v2.5"/></svg></div>
             <h3>Confidencialidade</h3>
@@ -75,119 +82,133 @@
       </div>
     </section>
 
-    <!-- ===== 3. MECANISMOS ===== -->
-    <section id="mecanismos" class="secao alternada">
+    <!-- ===== PARTE 2 ===== -->
+    <section id="senhas" class="secao alternada">
       <div class="container">
-        <p class="etiqueta">02 — Proteção</p>
-        <h2>Principais mecanismos de proteção</h2>
-        <div class="grade grade-2">
-          <article class="card">
-            <div class="icone"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="12" r="3.6"/><path d="M11.6 12H21"/><path d="M17.6 12v3.2"/><path d="M20.6 12v2.4"/></svg></div>
-            <h3>Senhas fortes</h3>
-            <p class="termo">Strong passwords</p>
-            <p>Dificultam o acesso indevido às contas. Uma boa senha é longa, mistura letras, números e símbolos e não é usada em outros sites.</p>
-          </article>
-          <article class="card">
-            <div class="icone"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="3" width="10" height="18" rx="2.2"/><path d="M10.8 18h2.4"/></svg></div>
-            <h3>Autenticação em dois fatores (2FA)</h3>
-            <p class="termo">Two-factor authentication</p>
-            <p>Adiciona uma etapa extra de verificação, como um código no celular. Mesmo que alguém descubra sua senha, ainda precisará desse segundo passo.</p>
-          </article>
-          <article class="card">
-            <div class="icone"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.6 3.6 7.6 20.4"/><path d="M16.4 3.6 14.4 20.4"/><path d="M4.2 9h15.6"/><path d="M3.8 15h15.6"/></svg></div>
-            <h3>Criptografia</h3>
-            <p class="termo">Encryption</p>
-            <p>Transforma os dados para impedir que sejam compreendidos por pessoas sem autorização. Só quem tem a chave correta consegue ler a informação.</p>
-          </article>
-          <article class="card">
-            <div class="icone"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2 19 6v5.3c0 4.3-2.9 8-7 9.5-4.1-1.5-7-5.2-7-9.5V6z"/><path d="m9 11.6 2.2 2.2 4-4.2"/></svg></div>
-            <h3>Antivírus</h3>
-            <p class="termo">Antivirus</p>
-            <p>Ajuda a detectar, bloquear e remover programas maliciosos. Funciona melhor quando está sempre atualizado.</p>
-          </article>
+        <p class="etiqueta">Parte 2 — Senhas</p>
+        <h2>Senhas seguras</h2>
+        <p class="texto-largo">A senha é a primeira barreira de uma conta. Senhas curtas ou repetidas em vários sites são descobertas com facilidade por ataques automatizados.</p>
+        <div class="grade grade-2"><article class="card"><h3>Como funciona</h3><p>Cada caractere a mais multiplica as combinações possíveis. Uma senha de 8 letras minúsculas tem cerca de 200 bilhões de combinações; uma de 16 caracteres variados ultrapassa números astronômicos, tornando a tentativa e erro inviável.</p><p class="exemplo"><strong>Exemplo:</strong> “maria123” é quebrada em segundos; “Trem-Azul-Café-Noturno-42” resiste por séculos.</p></article><article class="card"><h3>Boas práticas</h3><ul class="lista dica"><li>Use pelo menos 12 caracteres — frases longas funcionam bem.</li><li>Uma senha diferente para cada conta.</li><li>Evite nomes, datas e sequências como 123456.</li><li>Use um gerenciador de senhas para lembrar por você.</li><li>Troque a senha se houver suspeita de vazamento.</li></ul></article></div>
+        <a class="card link-lab" href="laboratorio.html#lab-senhas">
+          <span><strong>Experimente no Laboratório</strong><br /><small>Gerador de senhas e avaliador de força, rodando só no seu navegador.</small></span>
+          <span class="seta" aria-hidden="true">&rarr;</span>
+        </a>
+        <div class="aprenda">
+          <h3 class="subtitulo-secao">Aprenda na prática</h3>
+          <p class="nota">Vídeos curtos de fontes confiáveis. Eles complementam as explicações e as demonstrações; nenhum começa sozinho.</p>
+          <div class="grade grade-2 videos">
+          <figure class="video">
+            <div class="video-quadro"><iframe src="https://www.youtube-nocookie.com/embed/WCtw4hBC1F4?rel=0&amp;cc_load_policy=1&amp;hl=pt-BR&amp;cc_lang_pref=pt" title="Senhas seguras" loading="lazy" allow="encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <figcaption><strong>Senhas seguras</strong><span class="canal">NICbr — Cidadão na Rede</span><p>Como escolher uma senha fácil de lembrar e difícil de descobrir.</p>
+              <a href="https://www.youtube.com/watch?v=WCtw4hBC1F4" target="_blank" rel="noopener noreferrer">Não carregou? Abrir no YouTube</a></figcaption>
+          </figure>
+          <figure class="video">
+            <div class="video-quadro"><iframe src="https://www.youtube-nocookie.com/embed/Ca4lgeJllAA?rel=0&amp;cc_load_policy=1&amp;hl=pt-BR&amp;cc_lang_pref=pt" title="Senhas variadas" loading="lazy" allow="encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <figcaption><strong>Senhas variadas</strong><span class="canal">NICbr — Cidadão na Rede</span><p>Por que repetir a mesma senha em várias contas é arriscado.</p>
+              <a href="https://www.youtube.com/watch?v=Ca4lgeJllAA" target="_blank" rel="noopener noreferrer">Não carregou? Abrir no YouTube</a></figcaption>
+          </figure>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== LABORATÓRIO (ferramentas interativas — tudo roda no navegador) ===== -->
-    <section id="laboratorio" class="secao">
+    <!-- ===== PARTE 3 ===== -->
+    <section id="dois-fatores" class="secao">
       <div class="container">
-        <p class="etiqueta">Laboratório — Na prática</p>
-        <h2>Laboratório de Segurança Digital</h2>
-        <p class="texto-largo">Três ferramentas para experimentar. Nada do que você digita sai do seu navegador nem fica salvo.</p>
+        <p class="etiqueta">Parte 3 — 2FA</p>
+        <h2>Autenticação em dois fatores (2FA)</h2>
+        <p class="texto-largo">A verificação em duas etapas exige, além da senha (algo que você sabe), um segundo fator: algo que você tem (celular, chave física) ou algo que você é (digital, rosto).</p>
+        <div class="grade grade-2"><article class="card"><h3>Apenas senha</h3><ol class="passos"><li>Você digita a senha.</li><li>O sistema libera o acesso.</li></ol><p class="exemplo"><strong>Risco:</strong> se a senha vazar, qualquer pessoa entra na conta.</p></article><article class="card"><h3>Senha + segundo fator</h3><ol class="passos"><li>Você digita a senha.</li><li>O sistema pede um código temporário do seu aplicativo autenticador.</li><li>Só com os dois o acesso é liberado.</li></ol><p class="exemplo"><strong>Proteção:</strong> mesmo com a senha vazada, o invasor não tem o seu celular.</p></article></div>
+        <a class="card link-lab" href="laboratorio.html#lab-2fa">
+          <span><strong>Experimente no Laboratório</strong><br /><small>Simulação de login com e sem verificação em duas etapas.</small></span>
+          <span class="seta" aria-hidden="true">&rarr;</span>
+        </a>
+        <div class="aprenda">
+          <h3 class="subtitulo-secao">Aprenda na prática</h3>
+          <p class="nota">Vídeos curtos de fontes confiáveis. Eles complementam as explicações e as demonstrações; nenhum começa sozinho.</p>
+          <div class="grade grade-2 videos">
+          <figure class="video">
+            <div class="video-quadro"><iframe src="https://www.youtube-nocookie.com/embed/mxbuxoJWdVM?rel=0&amp;cc_load_policy=1&amp;hl=pt-BR&amp;cc_lang_pref=pt" title="Verificação em dois fatores" loading="lazy" allow="encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <figcaption><strong>Verificação em dois fatores</strong><span class="canal">NICbr — Cidadão na Rede</span><p>Os três tipos de fator e por que a senha sozinha não basta.</p>
+              <a href="https://www.youtube.com/watch?v=mxbuxoJWdVM" target="_blank" rel="noopener noreferrer">Não carregou? Abrir no YouTube</a></figcaption>
+          </figure>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- A. Gerador de senhas -->
-        <article class="card ferramenta" id="gerador">
-          <h3><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="12" r="3.6"/><path d="M11.6 12H21"/><path d="M17.6 12v3.2"/><path d="M20.6 12v2.4"/></svg><span>Gerador de senhas seguras</span></h3>
-          <div class="saida-senha">
-            <output id="ger-senha" aria-live="polite">Clique em “Gerar senha”</output>
+    <!-- ===== PARTE 4 ===== -->
+    <section id="criptografia" class="secao">
+      <div class="container">
+        <p class="etiqueta">Parte 4 — Criptografia</p>
+        <h2>Criptografia</h2>
+        <p class="texto-largo">A criptografia transforma uma mensagem legível em um texto embaralhado, que só pode ser revertido por quem possui a chave correta.</p>
+        <div class="grade grade-3"><article class="card"><h3>Texto original</h3><p class="termo">Plaintext</p><p>A mensagem legível, como “Prova na sexta”.</p></article><article class="card"><h3>Chave</h3><p class="termo">Key</p><p>O segredo que controla o embaralhamento. Sem ela, não é possível desfazer.</p></article><article class="card"><h3>Texto criptografado</h3><p class="termo">Ciphertext</p><p>O resultado ilegível, como “x9Fq…”. Pode trafegar pela internet sem revelar o conteúdo.</p></article></div><p class="exemplo bloco-exemplo"><strong>No dia a dia:</strong> o cadeado na barra do navegador (HTTPS) e a criptografia de ponta a ponta dos aplicativos de mensagem usam esse princípio.</p>
+        <a class="card link-lab" href="laboratorio.html#lab-cripto">
+          <span><strong>Experimente no Laboratório</strong><br /><small>Cifra de César passo a passo e criptografia AES real.</small></span>
+          <span class="seta" aria-hidden="true">&rarr;</span>
+        </a>
+        <div class="aprenda">
+          <h3 class="subtitulo-secao">Aprenda na prática</h3>
+          <p class="nota">Vídeos curtos de fontes confiáveis. Eles complementam as explicações e as demonstrações; nenhum começa sozinho.</p>
+          <div class="grade grade-2 videos">
+          <figure class="video">
+            <div class="video-quadro"><iframe src="https://www.youtube-nocookie.com/embed/u7HPHMxzMDk?rel=0&amp;cc_load_policy=1&amp;hl=pt-BR&amp;cc_lang_pref=pt" title="Entenda: o que é criptografia?" loading="lazy" allow="encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <figcaption><strong>Entenda: o que é criptografia?</strong><span class="canal">TecMundo</span><p>O que acontece com uma mensagem quando ela é criptografada.</p>
+              <a href="https://www.youtube.com/watch?v=u7HPHMxzMDk" target="_blank" rel="noopener noreferrer">Não carregou? Abrir no YouTube</a></figcaption>
+          </figure>
           </div>
-          <label class="campo-faixa">Tamanho: <strong id="ger-tam-valor">16</strong> caracteres
-            <input type="range" id="ger-tamanho" min="8" max="32" value="16" />
-          </label>
-          <div class="opcoes-gerador">
-            <label><input type="checkbox" id="ger-mai" checked /> Maiúsculas (A-Z)</label>
-            <label><input type="checkbox" id="ger-min" checked /> Minúsculas (a-z)</label>
-            <label><input type="checkbox" id="ger-num" checked /> Números (0-9)</label>
-            <label><input type="checkbox" id="ger-sim" checked /> Símbolos (!@#…)</label>
-          </div>
-          <div class="quiz-botoes">
-            <button type="button" class="botao" id="ger-gerar">Gerar senha</button>
-            <button type="button" class="botao secundario" id="ger-copiar" disabled>Copiar</button>
-          </div>
-          <p class="status" id="ger-status" role="status"></p>
-          <p class="nota">Use senhas longas e exclusivas para cada conta. Não compartilhe suas senhas.</p>
-        </article>
+        </div>
+      </div>
+    </section>
 
-        <!-- B. Verificador de senhas -->
-        <article class="card ferramenta" id="verificador">
-          <h3><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.6 17.4a8 8 0 1 1 14.8 0"/><path d="m12 13.4 3.6-3.8"/><circle cx="12" cy="13.6" r="1.3"/></svg><span>Verificador de senhas</span></h3>
-          <p class="aviso">Para sua segurança, teste uma senha fictícia. Não digite sua senha real de uso pessoal.</p>
-          <div class="linha-campo">
-            <input type="password" id="ver-campo" class="campo" placeholder="Digite uma senha fictícia" autocomplete="off" spellcheck="false" aria-label="Senha fictícia para avaliar" />
-            <button type="button" class="botao secundario" id="ver-mostrar">Mostrar</button>
-            <button type="button" class="botao secundario" id="ver-limpar">Limpar</button>
-          </div>
-          <div class="medidor"><div id="ver-barra"></div></div>
-          <p id="ver-nivel" class="nivel" aria-live="polite">Aguardando uma senha…</p>
-          <ul id="ver-dicas" class="lista"></ul>
-          <p class="nota">A avaliação é uma estimativa educativa e não garante a segurança da senha.</p>
-        </article>
+    <!-- ===== PARTE 5 ===== -->
+    <section id="antivirus" class="secao alternada">
+      <div class="container">
+        <p class="etiqueta">Parte 5 — Antivírus</p>
+        <h2>Antivírus e atualizações</h2>
+        <p class="texto-largo">Programas maliciosos (malware) tentam roubar dados, espionar ou sequestrar arquivos. O antivírus e as atualizações fecham essas portas.</p>
+        <div class="grade grade-2"><article class="card"><h3>Como funciona</h3><p>O antivírus compara arquivos com assinaturas de ameaças conhecidas e observa comportamentos suspeitos, bloqueando ou isolando o que parece perigoso.</p></article><article class="card"><h3>Atualizações</h3><p>Atualizações corrigem falhas de segurança descobertas. Um sistema desatualizado é como uma porta com fechadura quebrada conhecida por todos.</p><p class="exemplo"><strong>Dica:</strong> ative atualizações automáticas no celular e no computador.</p></article></div>
+      </div>
+    </section>
 
-        <!-- C. Criptografia -->
-        <article class="card ferramenta" id="cripto">
-          <h3><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.6 3.6 7.6 20.4"/><path d="M16.4 3.6 14.4 20.4"/><path d="M4.2 9h15.6"/><path d="M3.8 15h15.6"/></svg><span>Criptografia e descriptografia</span></h3>
-          <p>Usa AES-GCM (256 bits) com a chave derivada por PBKDF2 (SHA-256, 250.000 iterações). Cada operação usa salt e IV aleatórios.</p>
-          <div class="grade grade-2">
-            <div>
-              <label class="rotulo" for="cri-mensagem">Mensagem fictícia</label>
-              <textarea id="cri-mensagem" class="campo" rows="3" placeholder="Ex.: Encontro do grupo na biblioteca às 14h"></textarea>
-              <label class="rotulo" for="cri-chave">Chave de demonstração</label>
-              <input type="password" id="cri-chave" class="campo" autocomplete="off" placeholder="Ex.: chave-da-aula" />
-              <div class="quiz-botoes">
-                <button type="button" class="botao" id="cri-cifrar">Criptografar</button>
-              </div>
-            </div>
-            <div>
-              <label class="rotulo" for="cri-resultado">Texto criptografado</label>
-              <textarea id="cri-resultado" class="campo mono" rows="4" placeholder="O resultado aparece aqui (pode colar um texto para descriptografar)"></textarea>
-              <div class="quiz-botoes">
-                <button type="button" class="botao secundario" id="cri-decifrar">Descriptografar</button>
-              </div>
-              <label class="rotulo" for="cri-recuperada">Mensagem recuperada</label>
-              <output id="cri-recuperada" class="campo saida">—</output>
-            </div>
+    <!-- ===== PARTE: FIREWALL ===== -->
+    <section id="firewall" class="secao alternada">
+      <div class="container">
+        <p class="etiqueta">Parte 6 — Firewall</p>
+        <h2>Firewall e ameaças digitais</h2>
+        <p class="texto-largo">O firewall funciona como a portaria de um prédio: confere cada conexão que tenta entrar ou sair da rede e decide, por regras, se ela passa ou é bloqueada.</p>
+        <div class="grade grade-2">
+          <article class="card"><h3>Como funciona</h3><p>Cada conexão tem origem, destino e porta (o “número” de um serviço, como 443 para sites com HTTPS). O firewall compara isso com uma lista de regras e aplica a que combinar.</p></article>
+          <article class="card"><h3>Exemplo prático</h3><p>Em casa, o roteador bloqueia conexões vindas da internet que ninguém pediu, mas deixa passar a resposta do site que você abriu.</p><p class="exemplo"><strong>Limite:</strong> o firewall não impede que você mesmo clique num link de phishing — por isso ele trabalha junto com as outras camadas.</p></article>
+        </div>
+        <a class="card link-lab" href="laboratorio.html#lab-firewall">
+          <span><strong>Experimente no Laboratório</strong><br /><small>Monte regras e veja quais conexões passam ou são bloqueadas.</small></span>
+          <span class="seta" aria-hidden="true">&rarr;</span>
+        </a>
+        <div class="aprenda">
+          <h3 class="subtitulo-secao">Aprenda na prática</h3>
+          <p class="nota">Vídeos curtos de fontes confiáveis. Eles complementam as explicações e as demonstrações; nenhum começa sozinho.</p>
+          <div class="grade grade-2 videos">
+          <figure class="video">
+            <div class="video-quadro"><iframe src="https://www.youtube-nocookie.com/embed/XdajrUgEi2k?rel=0&amp;cc_load_policy=1&amp;hl=pt-BR&amp;cc_lang_pref=pt" title="O que é firewall?" loading="lazy" allow="encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <figcaption><strong>O que é firewall?</strong><span class="canal">Starti</span><p>A ideia do firewall explicada com a comparação de uma portaria.</p>
+              <a href="https://www.youtube.com/watch?v=XdajrUgEi2k" target="_blank" rel="noopener noreferrer">Não carregou? Abrir no YouTube</a></figcaption>
+          </figure>
+          <figure class="video">
+            <div class="video-quadro"><iframe src="https://www.youtube-nocookie.com/embed/KoimlJYKiHE?rel=0&amp;cc_load_policy=1&amp;hl=pt-BR&amp;cc_lang_pref=pt" title="Não clique em links desconhecidos" loading="lazy" allow="encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <figcaption><strong>Não clique em links desconhecidos</strong><span class="canal">NICbr — Cidadão na Rede</span><p>Como o phishing usa links falsos para roubar dados.</p>
+              <a href="https://www.youtube.com/watch?v=KoimlJYKiHE" target="_blank" rel="noopener noreferrer">Não carregou? Abrir no YouTube</a></figcaption>
+          </figure>
           </div>
-          <p class="status" id="cri-status" role="status"></p>
-          <p class="nota">Ferramenta educativa para demonstrar conceitos de criptografia. Não utilize esta demonstração como único meio de proteger informações sensíveis.</p>
-        </article>
+        </div>
       </div>
     </section>
 
     <!-- ===== 4. AMEAÇAS ===== -->
     <section id="ameacas" class="secao">
       <div class="container">
-        <p class="etiqueta">03 — Riscos</p>
+        <p class="etiqueta">Parte 7 — Riscos</p>
         <h2>Ameaças digitais</h2>
         <div class="grade grade-4">
           <article class="card perigo"><div class="icone"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.4" y="5.4" width="17.2" height="13.2" rx="2"/><path d="m4.4 7.4 7.6 5.6 7.6-5.6"/></svg></div><h3>Phishing</h3><p>Mensagens ou páginas falsas utilizadas para enganar as pessoas e obter informações.</p></article>
@@ -215,10 +236,45 @@
       </div>
     </section>
 
+    <!-- ===== PARTE: BACKUP ===== -->
+    <section id="backup" class="secao alternada">
+      <div class="container">
+        <p class="etiqueta">Parte 8 — Backup</p>
+        <h2>Backup e recuperação</h2>
+        <p class="texto-largo">Backup é uma cópia dos seus arquivos guardada em outro lugar. Se o celular quebrar, for roubado ou um vírus sequestrar os dados (ransomware), é o backup que permite recuperar tudo.</p>
+        <div class="grade grade-3">
+          <article class="card"><h3>3 cópias</h3><p>O arquivo original e mais duas cópias de segurança.</p></article>
+          <article class="card"><h3>2 mídias diferentes</h3><p>Por exemplo, um HD externo e um serviço de nuvem.</p></article>
+          <article class="card"><h3>1 fora de casa</h3><p>Uma cópia em outro local protege contra roubo, incêndio ou enchente.</p></article>
+        </div>
+        <p class="exemplo bloco-exemplo"><strong>Recuperação:</strong> backup que nunca foi testado pode falhar na hora. De tempos em tempos, tente restaurar um arquivo para confirmar que a cópia funciona.</p>
+        <a class="card link-lab" href="laboratorio.html#lab-backup">
+          <span><strong>Experimente no Laboratório</strong><br /><small>Simule um ataque de ransomware e veja quais estratégias de backup salvam os arquivos.</small></span>
+          <span class="seta" aria-hidden="true">&rarr;</span>
+        </a>
+        <div class="aprenda">
+          <h3 class="subtitulo-secao">Aprenda na prática</h3>
+          <p class="nota">Vídeos curtos de fontes confiáveis. Eles complementam as explicações e as demonstrações; nenhum começa sozinho.</p>
+          <div class="grade grade-2 videos">
+          <figure class="video">
+            <div class="video-quadro"><iframe src="https://www.youtube-nocookie.com/embed/2baxFZuRWzA?rel=0&amp;cc_load_policy=1&amp;hl=pt-BR&amp;cc_lang_pref=pt" title="Você tem backup?" loading="lazy" allow="encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <figcaption><strong>Você tem backup?</strong><span class="canal">CERT.br / NICbr</span><p>Por que fazer backups e quais cuidados tomar com as cópias.</p>
+              <a href="https://www.youtube.com/watch?v=2baxFZuRWzA" target="_blank" rel="noopener noreferrer">Não carregou? Abrir no YouTube</a></figcaption>
+          </figure>
+          <figure class="video">
+            <div class="video-quadro"><iframe src="https://www.youtube-nocookie.com/embed/GJqkH7GweOo?rel=0&amp;cc_load_policy=1&amp;hl=pt-BR&amp;cc_lang_pref=pt" title="Backup do celular" loading="lazy" allow="encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <figcaption><strong>Backup do celular</strong><span class="canal">NICbr — Cidadão na Rede</span><p>Como ativar o backup automático no Android e no iPhone.</p>
+              <a href="https://www.youtube.com/watch?v=GJqkH7GweOo" target="_blank" rel="noopener noreferrer">Não carregou? Abrir no YouTube</a></figcaption>
+          </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== 5. EXEMPLO PRÁTICO ===== -->
     <section id="exemplo" class="secao alternada">
       <div class="container">
-        <p class="etiqueta">04 — Na prática</p>
+        <p class="etiqueta">Parte 9 — Na prática</p>
         <h2>Exemplo prático</h2>
         <div class="grade grade-2">
           <article class="card perigo">
@@ -252,7 +308,7 @@
     <!-- ===== 6. BOAS PRÁTICAS ===== -->
     <section id="praticas" class="secao">
       <div class="container">
-        <p class="etiqueta">05 — Atitudes</p>
+        <p class="etiqueta">Parte 10 — Atitudes</p>
         <h2>Boas práticas</h2>
         <ul class="praticas">
           <li>Utilizar senhas fortes e exclusivas.</li>
@@ -268,7 +324,7 @@
     <!-- ===== 7. QUIZ ===== -->
     <section id="quiz" class="secao alternada">
       <div class="container">
-        <p class="etiqueta">06 — Teste seus conhecimentos</p>
+        <p class="etiqueta">Parte 11 — Teste seus conhecimentos</p>
         <h2>Quiz educativo</h2>
         <p>Escolha uma alternativa em cada pergunta e clique em “Conferir respostas”.</p>
         <form id="quiz-form">
@@ -286,7 +342,7 @@
     <!-- ===== 8. SOBRE ===== -->
     <section id="sobre" class="secao">
       <div class="container">
-        <p class="etiqueta">07 — Projeto</p>
+        <p class="etiqueta">Projeto</p>
         <h2>Sobre o projeto</h2>
         <p class="texto-largo">Trabalho escolar proposto pelo professor técnico Datan para a Semana da Computação de 2026.</p>
         <div class="grade grade-2">
@@ -311,7 +367,7 @@
     <!-- ===== 9. ACESSE ===== -->
     <section id="acesse" class="secao alternada">
       <div class="container">
-        <p class="etiqueta">08 — Continue explorando</p>
+        <p class="etiqueta">Continue explorando</p>
         <h2>Quer aprender mais?</h2>
         <p class="texto-largo">A apresentação termina aqui, mas sua segurança digital continua. Explore o conteúdo, compartilhe o conhecimento e coloque as boas práticas em ação.</p>
         <div class="acesse">
@@ -341,6 +397,12 @@
     </div>
   </footer>
 
-  <script src="JS/script.js"></script>
+<script src="script.js" defer></script>
+<script>
+window.addEventListener('load', () => {
+  if (window.iniciarSite) window.iniciarSite();
+  if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();
+});
+</script>
 </body>
 </html>
